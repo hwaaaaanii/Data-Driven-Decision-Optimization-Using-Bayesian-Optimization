@@ -37,13 +37,13 @@ python main.py -m <model_name> -o <option>
 
 ### Examples
 
-# Evaluate all models with option1
+Evaluate all models with option1
 python main.py -m all -o option1
 
-# Evaluate the Linear Regression and SVR models with both option1 and option2
+Evaluate the Linear Regression and SVR models with both option1 and option2
 python main.py -m Linear Regression SVR -o option1 option2
 
-# Evaluate the Random Forest model with option2
+Evaluate the Random Forest model with option2
 python main.py -m Random Forest -o option2
 
 
