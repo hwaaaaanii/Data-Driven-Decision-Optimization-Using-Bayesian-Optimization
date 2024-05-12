@@ -35,7 +35,7 @@ To run the script, use the following command:
 
 python main.py -m <model_name> -o <option>
 
-### Examples
+## Examples
 
 Evaluate all models with option1
 python main.py -m all -o option1
