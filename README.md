@@ -2,6 +2,19 @@
 
 [Data_Driven_Decision_Optimization.pdf](https://github.com/hwaaaaanii/Data-Driven-Decision-Optimization-Using-Bayesian-Optimization/files/15284006/Data_Driven_Decision_Optimization.pdf)
 
+# Data-Driven Decision Making and Control Model Evaluation
+
+This project is part of the IE437 course on Data-Driven Decision Making and Control at KAIST. It includes a script, `main.py`, which evaluates various machine learning models on specified datasets to determine their performance and predict outcomes based on input features.
+
+## Installation
+
+Ensure you have Python 3.8+ installed on your system. You can download it from [Python's official website](https://www.python.org).
+
+Then, install the required Python libraries
+
+
+
+
 ![Page 1](data/images/page_1.png)
 
 ![Page 2](data/images/page_2.png)
