@@ -14,9 +14,10 @@ Then, install the required Python libraries
 
 The script main.py can be run from the command line with the following arguments:
 
+'''python
 -m or --models: Specify the model(s) to evaluate. Use all to evaluate all available models.
 -o or --option: Specify the evaluation option(s). Use all to use all available options.
-
+'''
 
 ## Supported Models
 - Linear Regression
