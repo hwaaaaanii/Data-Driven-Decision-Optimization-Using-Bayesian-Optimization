@@ -46,7 +46,9 @@ python main.py -m Linear Regression SVR -o option1 option2
 Evaluate the Random Forest model with option2
 python main.py -m Random Forest -o option2
 
+<br>
 
+## Report
 
 ![Page 1](data/images/page_1.png)
 
