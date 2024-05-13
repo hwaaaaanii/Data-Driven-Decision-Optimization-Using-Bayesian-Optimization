@@ -3,8 +3,8 @@ import pandas as pd
 from models import linear_regression, random_forest, svr, base_nn, improved_nn, complex_nn
 
 # Load files
-log_file_path = '/Users/hwaaaaanii/Desktop/KAIST./Lectures./Data-Driven Decision Making and Control/IE437_HW2/data/log.csv'
-query_file_path = '/Users/hwaaaaanii/Desktop/KAIST./Lectures./Data-Driven Decision Making and Control/IE437_HW2/data/query.csv'
+log_file_path = './data/log.csv'
+query_file_path = './data/query.csv'
 
 log = pd.read_csv(log_file_path)
 query = pd.read_csv(query_file_path)
@@ -54,6 +54,7 @@ def main():
 
     # Evaluate each selected model with each selected option
     global Best_score, Best_query, Model_score
+
     for option in options_to_use:
         for model_name in models_to_evaluate:
             if model_name in model_functions:
@@ -62,8 +63,11 @@ def main():
                     input_data = log
                 elif option == 'option2':
                     input_data = score_top_10
-
-                Best_score, Best_query, Model_score = model_functions[model_name](input_data, Best_score, Best_query, Model_score, option)
+                try : 
+                    Best_score, Best_query, Model_score = model_functions[model_name](input_data, Best_score, Best_query, Model_score, option)
+                except : 
+                    print(f'Testing model {model_name} stopped for some reason.')                    
+                    pass
 
     # Print best model results
     if Best_score:
